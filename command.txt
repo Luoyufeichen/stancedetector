@@ -1,0 +1,11 @@
+cmake .. -DEIGEN3_DIR=/home/wz/cpu_NNClassifier/eigen -DN3LDG_DIR=/home/wz/cpu_NNClassifier/N3LDG
+
+../bin/./NNLSTMLabeler -train  /home/wz/cpu_NNClassifier/data/train.txt -dev /home/wz/cpu_NNClassifier/data/dev.txt -test /home/wz/cpu_NNClassifier/data/test.txt -option /home/wz/cpu_NNClassifier/data/option.debug
+
+-l -train  data\phone_dev.txt -dev data\phone_dev.txt -test data\phone_dev.txt -option data\option.debug
+
+
+-l -train  sample\sample.txt -dev sample\sample.txt -test sample\sample.txt -option sample\option.debug
+
+../bin/./StanceDetector -train  /home/wz/StanceDetector/data/train.txt -dev /home/wz/StanceDetector/data/dev.txt -test /home/wz/StanceDetector/data/test.txt -option /home/wz/StanceDetector/data/option.debug
+
